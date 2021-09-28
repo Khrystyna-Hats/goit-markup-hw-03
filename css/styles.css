@@ -93,7 +93,10 @@ img {
   padding-bottom: 32px;
 }
 
-.nav-item,
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .second-address-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -134,7 +137,7 @@ img {
   align-items: center;
 }
 
-header {
+.main-header {
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -168,9 +171,7 @@ footer {
   text-align: center;
   background-color: var(--second-background-color);
   padding-top: 200px;
-  padding-right: 250px;
   padding-bottom: 200px;
-  padding-left: 250px;
 }
 
 .hero-btn {
@@ -232,6 +233,10 @@ footer {
 
 .activity-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.activity-section {
+  padding-top: 0;
 }
 
 .activity,
